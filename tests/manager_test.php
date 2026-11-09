@@ -16,6 +16,7 @@
 
 namespace tool_onlinecompiler;
 
+#[\PHPUnit\Framework\Attributes\CoversClass(manager::class)]
 /**
  * Tests for the manager: telling Jobe servers apart, and connecting and switching back without losing the site's
  * own settings. The test run itself needs a Jobe server, so it is not covered here.
@@ -25,7 +26,6 @@ namespace tool_onlinecompiler;
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers     \tool_onlinecompiler\manager
  */
-#[\PHPUnit\Framework\Attributes\CoversClass(manager::class)]
 final class manager_test extends \advanced_testcase {
     /** A made-up key in the form of an OnlineCompiler.io key. */
     private const KEY = '0123456789abcdef0123456789abcdef';
