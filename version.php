@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'tool_onlinecompiler';
-$plugin->version = 2026110900;
+$plugin->version = 2026111000;
 $plugin->requires = 2023100900; // Moodle 4.3, the oldest CodeRunner supports.
 $plugin->supported = [403, 503];
 $plugin->maturity = MATURITY_STABLE;

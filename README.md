@@ -14,7 +14,6 @@ CodeRunner needs a Jobe server to compile and run students' code. Its built-in d
 - **Switch back at any time.** The first time you connect, it keeps your previous Jobe server, key and sandbox setting, and **Put my earlier settings back** restores them.
 - **Test it.** **Test** runs a one-line Python program through CodeRunner's own Jobe sandbox class, exactly as a quiz question runs, and says in plain words what went wrong if it fails: a refused key, a Moodle server that can't reach the Jobe server (firewall or proxy), or a busy server.
 - **See where code runs today:** OnlineCompiler.io, Canterbury's demo server, or another Jobe server.
-- **Exams:** for a CodeRunner exam, book its hours with OnlineCompiler.io. During a booked exam your students' runs aren't refused by your account's limits, and your first booked exam is free ([how it works](https://onlinecompiler.io/coderunner-exams)).
 
 Every change is recorded in Moodle's config changes report, with the API key shown as asterisks.
 
@@ -22,7 +21,7 @@ Every change is recorded in Moodle's config changes report, with the API key sho
 
 1. Install CodeRunner first (it is a dependency).
 2. Download this repository as a ZIP and install it from **Site administration, Plugins, Install plugins**, or put it in `admin/tool/onlinecompiler` (`public/admin/tool/onlinecompiler` on Moodle 5.1 and later) and visit the notifications page.
-3. Create a free API key on the [API keys page](https://api.onlinecompiler.io/compilers/api-keys/) of your OnlineCompiler.io dashboard (sign in with Google).
+3. Create a free API key on the [API keys page](https://api.onlinecompiler.io/compilers/api-keys/) of your OnlineCompiler.io dashboard (sign in with Google). The free plan needs no credit card, and the plugin needs nothing beyond it.
 4. Open **Site administration, Plugins, Admin tools, OnlineCompiler.io for CodeRunner**, paste the key, connect, and press **Test**.
 
 Requires Moodle 4.3 or later (the oldest CodeRunner supports) and CodeRunner. Tested on Moodle 5.3 with CodeRunner 5.10.9.
@@ -35,7 +34,7 @@ Requires Moodle 4.3 or later (the oldest CodeRunner supports) and CodeRunner. Te
 
 ## Privacy
 
-The plugin stores no personal data and implements Moodle's privacy API as a null provider. OnlineCompiler.io's [privacy policy](https://onlinecompiler.io/privacy) covers the code CodeRunner sends; a [data processing agreement](https://onlinecompiler.io/dpa) is available.
+The plugin stores no personal data in Moodle. Its privacy provider declares what reaches OnlineCompiler.io once CodeRunner is connected: the code of each answer a student checks or submits, the question's input and files, and the language. CodeRunner sends these with the site's API key, not with the student's name, email or account. OnlineCompiler.io's [privacy policy](https://onlinecompiler.io/privacy) covers that data, and a [data processing agreement](https://onlinecompiler.io/dpa) is available.
 
 ## License
 

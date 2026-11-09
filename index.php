@@ -108,12 +108,8 @@ if ($connected && $manager->has_previous()) {
     );
 }
 
-// Exams, and what is different from a standard Jobe server.
-echo $OUTPUT->heading(get_string('exams_heading', 'tool_onlinecompiler'), 3, 'mt-4');
-echo html_writer::tag('p', get_string('exams_text', 'tool_onlinecompiler', (object) [
-    'book' => manager::BOOK_EXAM_URL,
-    'info' => manager::EXAMS_URL,
-]));
+// What is different from a standard Jobe server.
+echo $OUTPUT->heading(get_string('differences_heading', 'tool_onlinecompiler'), 3, 'mt-4');
 echo html_writer::tag('p', get_string('differences', 'tool_onlinecompiler', manager::DIFFERENCES_URL));
 
 echo $OUTPUT->footer();

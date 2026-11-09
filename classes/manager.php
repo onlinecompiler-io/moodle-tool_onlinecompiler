@@ -33,12 +33,6 @@ class manager {
     /** Where an admin creates an OnlineCompiler.io API key. */
     public const APIKEYS_URL = 'https://api.onlinecompiler.io/compilers/api-keys/';
 
-    /** Where an admin books a CodeRunner exam. */
-    public const BOOK_EXAM_URL = 'https://api.onlinecompiler.io/exams/new/';
-
-    /** How booked CodeRunner exams work. */
-    public const EXAMS_URL = 'https://onlinecompiler.io/coderunner-exams';
-
     /** How OnlineCompiler.io differs from a standard Jobe server. */
     public const DIFFERENCES_URL = 'https://onlinecompiler.io/moodle-coderunner#differences';
 
