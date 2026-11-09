@@ -1,0 +1,3 @@
+# GitHub's "Download ZIP" and release archives hold only the plugin itself.
+/.github export-ignore
+/.gitattributes export-ignore
